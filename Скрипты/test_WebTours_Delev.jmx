@@ -29,7 +29,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user_info" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user_info">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="filename">Login,Password,address1,address2,pass1,arrive,depart.csv</stringProp>
@@ -41,7 +41,7 @@
         <stringProp name="variableNames">Login,Password,address1,address2,pass1,arrive,depart</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="seat_info" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="seat_info">
         <stringProp name="filename">expDate,creditCard,seatType,seatPref.csv</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="variableNames">expDate,creditCard,seatType,seatPref</stringProp>
@@ -55,13 +55,13 @@
       <hashTree/>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Скрипты_WebTours"/>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC01_Логин" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC01_Логин"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -75,7 +75,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -97,7 +97,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -119,7 +119,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -172,7 +172,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userSession" enabled="true">
+              <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userSession">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">userSession</stringProp>
                 <stringProp name="BoundaryExtractor.lboundary">userSession&quot; value=&quot;</stringProp>
@@ -182,23 +182,23 @@
                 <stringProp name="BoundaryExtractor.match_number">0</stringProp>
               </BoundaryExtractor>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.custom_message"></stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">16</intProp>
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_02_Логин" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_02_Логин">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/login.pl-29" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/login.pl-29">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -255,7 +255,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -335,7 +335,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/nav.pl-30" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/nav.pl-30">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -365,7 +365,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -423,7 +423,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/login.pl-31" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_02_/cgi-bin/login.pl-31">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -446,7 +446,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -503,7 +503,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1108754765">Welcome, &lt;b&gt;${Login}&lt;/b&gt;, to the Web Tours reservation pages.</stringProp>
                 </collectionProp>
@@ -515,11 +515,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_03_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC01_03_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_03_/cgi-bin/welcome.pl-38" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_03_/cgi-bin/welcome.pl-38">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -542,7 +542,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -600,7 +600,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_03_/cgi-bin/nav.pl-39" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC01_03_/cgi-bin/nav.pl-39">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -623,7 +623,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -709,13 +709,13 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC02_Поиск_билета_без_оплаты" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC02_Поиск_билета_без_оплаты"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -729,7 +729,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -751,7 +751,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -838,21 +838,21 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.custom_message"></stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">16</intProp>
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_02_Логин" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_02_Логин">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/login.pl-29" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/login.pl-29">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -909,7 +909,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -989,7 +989,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/nav.pl-30" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/nav.pl-30">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1077,7 +1077,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/login.pl-31" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_02_/cgi-bin/login.pl-31">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1169,11 +1169,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_03_Поиск_билета" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_03_Поиск_билета">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/welcome.pl-32" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/welcome.pl-32">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1254,7 +1254,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/nav.pl-33" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/nav.pl-33">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1342,7 +1342,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/reservations.pl-34" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_03_/cgi-bin/reservations.pl-34">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1433,11 +1433,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_04_Ввод_даты" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_04_Ввод_даты">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_04_/cgi-bin/reservations.pl-35" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_04_/cgi-bin/reservations.pl-35">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1635,11 +1635,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_05_Выбор_времени" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_05_Выбор_времени">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_05_/cgi-bin/reservations.pl-36" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_05_/cgi-bin/reservations.pl-36">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1785,11 +1785,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_06_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_06_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_06_/cgi-bin/welcome.pl-38" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_06_/cgi-bin/welcome.pl-38">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1870,7 +1870,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_06_/cgi-bin/nav.pl-39" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC02_06_/cgi-bin/nav.pl-39">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1968,7 +1968,7 @@
             <stringProp name="ActionProcessor.duration">0</stringProp>
           </TestAction>
           <hashTree>
-            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
               <doubleProp>
                 <name>throughput</name>
                 <value>0.0</value>
@@ -1979,13 +1979,13 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC03_Покупка_билета" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC03_Покупка_билета"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1999,7 +1999,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2021,7 +2021,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2106,23 +2106,23 @@
                 <stringProp name="BoundaryExtractor.match_number">0</stringProp>
               </BoundaryExtractor>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_02_Логин" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_02_Логин">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/login.pl-29" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/login.pl-29">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2179,7 +2179,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2248,7 +2248,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1002738365">User password was correct</stringProp>
                 </collectionProp>
@@ -2259,7 +2259,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/nav.pl-30" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/nav.pl-30">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2289,7 +2289,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2347,7 +2347,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/login.pl-31" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_02_/cgi-bin/login.pl-31">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2370,7 +2370,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2439,11 +2439,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_03_Поиск_билета" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_03_Поиск_билета">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/welcome.pl-32" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/welcome.pl-32">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2466,7 +2466,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2524,7 +2524,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/nav.pl-33" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/nav.pl-33">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2554,7 +2554,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2612,7 +2612,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/reservations.pl-34" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_03_/cgi-bin/reservations.pl-34">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2634,7 +2634,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2703,11 +2703,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_04_Ввод_даты" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_04_Ввод_даты">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_04_/cgi-bin/reservations.pl-35" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_04_/cgi-bin/reservations.pl-35">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2814,7 +2814,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2905,11 +2905,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_05_Выбор_времени" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_05_Выбор_времени">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_05_/cgi-bin/reservations.pl-36" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_05_/cgi-bin/reservations.pl-36">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2974,7 +2974,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3043,7 +3043,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1060802662">&lt;input type=&quot;hidden&quot; name=&quot;seatPref&quot; value=&quot;${seatPref}&quot;  /&gt;</stringProp>
                 </collectionProp>
@@ -3055,11 +3055,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_06_Оплата_билета" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_06_Оплата_билета">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_06_/cgi-bin/reservations.pl-37" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_06_/cgi-bin/reservations.pl-37">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3074,14 +3074,14 @@
                   <elementProp name="firstName" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">firstName</stringProp>
-                    <stringProp name="Argument.value">Jojo</stringProp>
+                    <stringProp name="Argument.value">${Login}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lastName" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">lastName</stringProp>
-                    <stringProp name="Argument.value">Bean</stringProp>
+                    <stringProp name="Argument.value">${Password}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -3201,7 +3201,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3270,7 +3270,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
                 </collectionProp>
@@ -3282,11 +3282,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_07_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_07_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_07_/cgi-bin/welcome.pl-38" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_07_/cgi-bin/welcome.pl-38">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3367,7 +3367,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_07_/cgi-bin/nav.pl-39" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC03_07_/cgi-bin/nav.pl-39">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3476,13 +3476,13 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC04_Просмотр_списка_путевых_листов" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC04_Просмотр_списка_путевых_листов"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3496,7 +3496,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3518,7 +3518,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3603,23 +3603,23 @@
                 <stringProp name="BoundaryExtractor.match_number">0</stringProp>
               </BoundaryExtractor>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_02_Логин" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_02_Логин">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/login.pl-29" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/login.pl-29">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3676,7 +3676,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3745,7 +3745,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1002738365">User password was correct</stringProp>
                 </collectionProp>
@@ -3756,7 +3756,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/nav.pl-30" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/nav.pl-30">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3844,7 +3844,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/login.pl-31" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_02_/cgi-bin/login.pl-31">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3867,7 +3867,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3924,7 +3924,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1108754765">Welcome, &lt;b&gt;${Login}&lt;/b&gt;, to the Web Tours reservation pages.</stringProp>
                 </collectionProp>
@@ -3936,11 +3936,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_03_Список_билетов" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_03_Список_билетов">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/welcome.pl-7" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/welcome.pl-7">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3963,7 +3963,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -4021,7 +4021,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/nav.pl-8" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/nav.pl-8">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4051,7 +4051,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -4109,7 +4109,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/itinerary.pl-9" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_03_/cgi-bin/itinerary.pl-9">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4123,7 +4123,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -4180,7 +4180,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
                 </collectionProp>
@@ -4192,11 +4192,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_04_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_04_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_04_/cgi-bin/welcome.pl-11" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_04_/cgi-bin/welcome.pl-11">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4277,7 +4277,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_04_/cgi-bin/nav.pl-12" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC04_04_/cgi-bin/nav.pl-12">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4386,13 +4386,13 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC05_Удаление_существующего_бронирования" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC05_Удаление_существующего_бронирования"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4406,7 +4406,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4428,7 +4428,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4513,19 +4513,19 @@
                 <stringProp name="BoundaryExtractor.match_number">0</stringProp>
               </BoundaryExtractor>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_02_Логин" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_02_Логин">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -4846,11 +4846,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_03_Список_билетов" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_03_Список_билетов">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/welcome.pl-7" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/welcome.pl-7">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -4873,7 +4873,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -4931,7 +4931,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/nav.pl-8" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/nav.pl-8">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5019,7 +5019,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/itinerary.pl-9" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_03_/cgi-bin/itinerary.pl-9">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5112,11 +5112,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_04_Удалить_билет" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_04_Удалить_билет">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_04_/cgi-bin/itinerary.pl-10" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_04_/cgi-bin/itinerary.pl-10">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5137,7 +5137,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -5206,7 +5206,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
@@ -5230,7 +5230,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PreProcessor>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
                 </collectionProp>
@@ -5242,11 +5242,11 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_05_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_05_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_05_/cgi-bin/welcome.pl-11" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_05_/cgi-bin/welcome.pl-11">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5327,7 +5327,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_05_/cgi-bin/nav.pl-12" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC05_05_/cgi-bin/nav.pl-12">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5436,17 +5436,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC06_Регистрация_пользователя" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC06_Регистрация_пользователя"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_01_Домашняя_страница" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_01_Домашняя_страница">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/WebTours/-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/WebTours/-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
-              <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.path">/WebTours/</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5457,11 +5456,10 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/welcome.pl-2" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/welcome.pl-2">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
-              <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.path">/cgi-bin/welcome.pl</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5471,20 +5469,19 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="signOff" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">signOff</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">signOff</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/nav.pl-3" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/nav.pl-3">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
-              <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.path">/cgi-bin/nav.pl</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5494,31 +5491,95 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="in" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">in</stringProp>
                     <stringProp name="Argument.value">home</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">in</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
             </HTTPSamplerProxy>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                    <stringProp name="Header.value">navigate</stringProp>
+                  </elementProp>
+                  <elementProp name="Referer" elementType="Header">
+                    <stringProp name="Header.name">Referer</stringProp>
+                    <stringProp name="Header.value">${protocol}://${host}:1080/cgi-bin/welcome.pl?signOff=true</stringProp>
+                  </elementProp>
+                  <elementProp name="Sec-Fetch-Site" elementType="Header">
+                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                    <stringProp name="Header.value">same-origin</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">ru-RU,ru;q=0.9</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                  </elementProp>
+                  <elementProp name="sec-ch-ua" elementType="Header">
+                    <stringProp name="Header.name">sec-ch-ua</stringProp>
+                    <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;122&quot;, &quot;Not(A:Brand&quot;;v=&quot;24&quot;, &quot;Google Chrome&quot;;v=&quot;122&quot;</stringProp>
+                  </elementProp>
+                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                    <stringProp name="Header.value">?0</stringProp>
+                  </elementProp>
+                  <elementProp name="sec-ch-ua-platform" elementType="Header">
+                    <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                  </elementProp>
+                  <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                    <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                    <stringProp name="Header.value">1</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                  </elementProp>
+                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                    <stringProp name="Header.value">frame</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userSession" enabled="true">
+                <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+                <stringProp name="BoundaryExtractor.refname">userSession</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">userSession&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;/&gt;</stringProp>
+                <stringProp name="BoundaryExtractor.default">none</stringProp>
+                <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+                <stringProp name="BoundaryExtractor.match_number">0</stringProp>
+              </BoundaryExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_02_Регистрация" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_02_Регистрация">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_02_/cgi-bin/login.pl-1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_02_/cgi-bin/login.pl-1">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5623,11 +5684,11 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_03_Ввод_данных" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_03_Ввод_данных">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters">
               <collectionProp name="UserParameters.names">
                 <stringProp name="-392030630">new_password</stringProp>
               </collectionProp>
@@ -5639,7 +5700,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <boolProp name="UserParameters.per_iteration">false</boolProp>
             </UserParameters>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_03_/cgi-bin/login.pl-4" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_03_/cgi-bin/login.pl-4">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5675,28 +5736,28 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <elementProp name="firstName" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">firstName</stringProp>
-                    <stringProp name="Argument.value">test1</stringProp>
+                    <stringProp name="Argument.value">${Login}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lastName" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">lastName</stringProp>
-                    <stringProp name="Argument.value">test1</stringProp>
+                    <stringProp name="Argument.value">${Password}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="address1" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">address1</stringProp>
-                    <stringProp name="Argument.value">test1</stringProp>
+                    <stringProp name="Argument.value">${address1}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="address2" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">address2</stringProp>
-                    <stringProp name="Argument.value">test1</stringProp>
+                    <stringProp name="Argument.value">${address2}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5718,7 +5779,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -5799,11 +5860,11 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_04_Переход_в_кабинет" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_04_Переход_в_кабинет">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/welcome.pl-5" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/welcome.pl-5">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5825,7 +5886,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -5893,7 +5954,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/nav.pl-6" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/nav.pl-6">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -5922,7 +5983,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -5980,7 +6041,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/login.pl-7" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/login.pl-7">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -6062,11 +6123,11 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_05_Выход" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_05_Выход">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_05_/cgi-bin/welcome.pl-8" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_05_/cgi-bin/welcome.pl-8">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -6147,7 +6208,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_05_/cgi-bin/nav.pl-9" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_05_/cgi-bin/nav.pl-9">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">1080</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -6257,7 +6318,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="debug" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="debug">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -6268,7 +6329,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -6277,7 +6338,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
         </ModuleController>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -6331,37 +6392,37 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
         </elementProp>
       </kg.apc.jmeter.threads.SteppingThreadGroup>
       <hashTree>
-        <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="bzm - Weighted Switch Controller" enabled="true">
+        <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="bzm - Weighted Switch Controller">
           <boolProp name="IsRandomChoice">false</boolProp>
           <collectionProp name="Weights">
-            <collectionProp name="-1175448180">
+            <collectionProp name="-385337517">
               <stringProp name="1653224677">UC01_Логин</stringProp>
               <stringProp name="1567">10</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="507790975">
+            <collectionProp name="-678485381">
               <stringProp name="2023867423">UC02_Поиск_билета_без_оплаты</stringProp>
-              <stringProp name="1598">20</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="-120324560">
+            <collectionProp name="1434347595">
               <stringProp name="-968344081">UC03_Покупка_билета</stringProp>
-              <stringProp name="1629">30</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="8542481">
+            <collectionProp name="876647020">
               <stringProp name="975207504">UC04_Просмотр_списка_путевых_листов</stringProp>
-              <stringProp name="1567">10</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="1179553725">
+            <collectionProp name="1418721910">
               <stringProp name="1918787290">UC05_Удаление_существующего_бронирования</stringProp>
-              <stringProp name="1598">20</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="-626611475">
+            <collectionProp name="-1518976400">
               <stringProp name="239754580">UC06_Регистрация_пользователя</stringProp>
-              <stringProp name="1567">10</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
           </collectionProp>
@@ -6493,6 +6554,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -6982,6 +7053,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -7127,6 +7208,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -7703,6 +7794,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-724325269">&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;seatType&quot; value=&quot;${seatType}&quot; /&gt;${seatType}&lt;/label&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_04_Ввод_даты" enabled="true">
@@ -7895,6 +7996,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1867635406">&lt;!-- From ${depart} (1) To ${arrive} (0) --&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_05_Выбор_времени" enabled="true">
@@ -8034,6 +8145,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1060802662">&lt;input type=&quot;hidden&quot; name=&quot;seatPref&quot; value=&quot;${seatPref}&quot;  /&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -8202,6 +8323,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -8347,6 +8478,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -8923,6 +9064,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-724325269">&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;seatType&quot; value=&quot;${seatType}&quot; /&gt;${seatType}&lt;/label&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_04_Ввод_даты" enabled="true">
@@ -9115,6 +9266,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1867635406">&lt;!-- From ${depart} (1) To ${arrive} (0) --&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_05_Выбор_времени" enabled="true">
@@ -9255,6 +9416,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1060802662">&lt;input type=&quot;hidden&quot; name=&quot;seatPref&quot; value=&quot;${seatPref}&quot;  /&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_06_Оплата_билета" enabled="true">
@@ -9276,14 +9447,14 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     <elementProp name="firstName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">firstName</stringProp>
-                      <stringProp name="Argument.value">Jojo</stringProp>
+                      <stringProp name="Argument.value">${Login}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="lastName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">lastName</stringProp>
-                      <stringProp name="Argument.value">Bean</stringProp>
+                      <stringProp name="Argument.value">${Password}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -9472,6 +9643,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_07_Выход" enabled="true">
@@ -9639,6 +9820,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -9784,6 +9975,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -10352,6 +10553,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_04_Выход" enabled="true">
@@ -10519,6 +10730,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -10664,6 +10885,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -11242,6 +11473,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="RegexExtractor.match_number">-1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_04_Удалить_билет" enabled="true">
@@ -11361,6 +11602,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
 </stringProp>
                   <stringProp name="scriptLanguage">groovy</stringProp>
                 </JSR223PreProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -11529,6 +11780,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -11557,8 +11818,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/WebTours/-1" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/WebTours/</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -11572,8 +11832,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/welcome.pl-2" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/cgi-bin/welcome.pl</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -11583,10 +11842,10 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="signOff" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">signOff</stringProp>
                       <stringProp name="Argument.value">true</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                      <stringProp name="Argument.name">signOff</stringProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
@@ -11595,8 +11854,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/nav.pl-3" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/cgi-bin/nav.pl</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -11606,15 +11864,89 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="in" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">in</stringProp>
                       <stringProp name="Argument.value">home</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                      <stringProp name="Argument.name">in</stringProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
               </HTTPSamplerProxy>
-              <hashTree/>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                      <stringProp name="Header.value">navigate</stringProp>
+                    </elementProp>
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">${protocol}://${host}:1080/cgi-bin/welcome.pl?signOff=true</stringProp>
+                    </elementProp>
+                    <elementProp name="Sec-Fetch-Site" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                      <stringProp name="Header.value">same-origin</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">ru-RU,ru;q=0.9</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua</stringProp>
+                      <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;122&quot;, &quot;Not(A:Brand&quot;;v=&quot;24&quot;, &quot;Google Chrome&quot;;v=&quot;122&quot;</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                      <stringProp name="Header.value">?0</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua-platform" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                      <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                    </elementProp>
+                    <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                      <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                      <stringProp name="Header.value">1</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                    </elementProp>
+                    <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                      <stringProp name="Header.value">frame</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userSession" enabled="true">
+                  <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+                  <stringProp name="BoundaryExtractor.refname">userSession</stringProp>
+                  <stringProp name="BoundaryExtractor.lboundary">userSession&quot; value=&quot;</stringProp>
+                  <stringProp name="BoundaryExtractor.rboundary">&quot;/&gt;</stringProp>
+                  <stringProp name="BoundaryExtractor.default">none</stringProp>
+                  <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+                  <stringProp name="BoundaryExtractor.match_number">0</stringProp>
+                </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_02_Регистрация" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -11713,6 +12045,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="457557180">First time registering? Please complete the form below.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_03_Ввод_данных" enabled="true">
@@ -11767,28 +12109,28 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     <elementProp name="firstName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">firstName</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${Login}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="lastName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">lastName</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${Password}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="address1" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">address1</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${address1}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="address2" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">address2</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${address2}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -11879,6 +12221,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1753361864">Welcome to Web Tours</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_04_Переход_в_кабинет" enabled="true">
@@ -11963,6 +12315,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1503672380"> User has returned to the home page.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/nav.pl-6" enabled="true">
@@ -12298,6 +12660,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -12337,37 +12709,37 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
         </elementProp>
       </kg.apc.jmeter.threads.SteppingThreadGroup>
       <hashTree>
-        <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="bzm - Weighted Switch Controller" enabled="true">
+        <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="bzm - Weighted Switch Controller">
           <boolProp name="IsRandomChoice">false</boolProp>
           <collectionProp name="Weights">
-            <collectionProp name="-1175448180">
+            <collectionProp name="-385337517">
               <stringProp name="1653224677">UC01_Логин</stringProp>
               <stringProp name="1567">10</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="507790975">
+            <collectionProp name="-678485381">
               <stringProp name="2023867423">UC02_Поиск_билета_без_оплаты</stringProp>
-              <stringProp name="1598">20</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="-120324560">
+            <collectionProp name="1434347595">
               <stringProp name="-968344081">UC03_Покупка_билета</stringProp>
-              <stringProp name="1629">30</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="8542481">
+            <collectionProp name="876647020">
               <stringProp name="975207504">UC04_Просмотр_списка_путевых_листов</stringProp>
-              <stringProp name="1567">10</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="1179553725">
+            <collectionProp name="1418721910">
               <stringProp name="1918787290">UC05_Удаление_существующего_бронирования</stringProp>
-              <stringProp name="1598">20</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="-626611475">
+            <collectionProp name="-1518976400">
               <stringProp name="239754580">UC06_Регистрация_пользователя</stringProp>
-              <stringProp name="1567">10</stringProp>
+              <stringProp name="48625">100</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
           </collectionProp>
@@ -12499,6 +12871,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -12988,6 +13370,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -13007,7 +13399,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <hashTree/>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC02_Поиск_билета_без_оплаты" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="UC02_Поиск_билета_без_оплаты"/>
           <hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_01_Домашняя_страница" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -13133,6 +13525,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -13709,6 +14111,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-724325269">&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;seatType&quot; value=&quot;${seatType}&quot; /&gt;${seatType}&lt;/label&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_04_Ввод_даты" enabled="true">
@@ -13901,6 +14313,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1867635406">&lt;!-- From ${depart} (1) To ${arrive} (0) --&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_05_Выбор_времени" enabled="true">
@@ -14040,6 +14462,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1060802662">&lt;input type=&quot;hidden&quot; name=&quot;seatPref&quot; value=&quot;${seatPref}&quot;  /&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -14208,6 +14640,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -14353,6 +14795,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -14929,6 +15381,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-724325269">&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;seatType&quot; value=&quot;${seatType}&quot; /&gt;${seatType}&lt;/label&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_04_Ввод_даты" enabled="true">
@@ -15121,6 +15583,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1867635406">&lt;!-- From ${depart} (1) To ${arrive} (0) --&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_05_Выбор_времени" enabled="true">
@@ -15261,6 +15733,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1060802662">&lt;input type=&quot;hidden&quot; name=&quot;seatPref&quot; value=&quot;${seatPref}&quot;  /&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_06_Оплата_билета" enabled="true">
@@ -15282,14 +15764,14 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     <elementProp name="firstName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">firstName</stringProp>
-                      <stringProp name="Argument.value">Jojo</stringProp>
+                      <stringProp name="Argument.value">${Login}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="lastName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">lastName</stringProp>
-                      <stringProp name="Argument.value">Bean</stringProp>
+                      <stringProp name="Argument.value">${Password}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -15478,6 +15960,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_07_Выход" enabled="true">
@@ -15645,6 +16137,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -15790,6 +16292,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -16358,6 +16870,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_04_Выход" enabled="true">
@@ -16525,6 +17047,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -16670,6 +17202,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                   <stringProp name="BoundaryExtractor.match_number">0</stringProp>
                 </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -17248,6 +17790,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <stringProp name="RegexExtractor.match_number">-1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC05_04_Удалить_билет" enabled="true">
@@ -17367,6 +17919,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
 </stringProp>
                   <stringProp name="scriptLanguage">groovy</stringProp>
                 </JSR223PreProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1371582557">Flight 100 leaves ${depart}  for ${arrive}.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -17535,6 +18097,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing" enabled="false">
@@ -17563,8 +18135,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/WebTours/-1" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/WebTours/</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -17578,8 +18149,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/welcome.pl-2" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/cgi-bin/welcome.pl</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -17589,10 +18159,10 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="signOff" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">signOff</stringProp>
                       <stringProp name="Argument.value">true</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                      <stringProp name="Argument.name">signOff</stringProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
@@ -17601,8 +18171,7 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_01_/cgi-bin/nav.pl-3" enabled="true">
                 <stringProp name="HTTPSampler.domain">${host}</stringProp>
                 <stringProp name="HTTPSampler.port">1080</stringProp>
-                <stringProp name="HTTPSampler.protocol">http</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.path">/cgi-bin/nav.pl</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -17612,15 +18181,89 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="in" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">in</stringProp>
                       <stringProp name="Argument.value">home</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                      <stringProp name="Argument.name">in</stringProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
               </HTTPSamplerProxy>
-              <hashTree/>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                      <stringProp name="Header.value">navigate</stringProp>
+                    </elementProp>
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">${protocol}://${host}:1080/cgi-bin/welcome.pl?signOff=true</stringProp>
+                    </elementProp>
+                    <elementProp name="Sec-Fetch-Site" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                      <stringProp name="Header.value">same-origin</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">ru-RU,ru;q=0.9</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua</stringProp>
+                      <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;122&quot;, &quot;Not(A:Brand&quot;;v=&quot;24&quot;, &quot;Google Chrome&quot;;v=&quot;122&quot;</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                      <stringProp name="Header.value">?0</stringProp>
+                    </elementProp>
+                    <elementProp name="sec-ch-ua-platform" elementType="Header">
+                      <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                      <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                    </elementProp>
+                    <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                      <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                      <stringProp name="Header.value">1</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36</stringProp>
+                    </elementProp>
+                    <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                      <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                      <stringProp name="Header.value">frame</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userSession" enabled="true">
+                  <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+                  <stringProp name="BoundaryExtractor.refname">userSession</stringProp>
+                  <stringProp name="BoundaryExtractor.lboundary">userSession&quot; value=&quot;</stringProp>
+                  <stringProp name="BoundaryExtractor.rboundary">&quot;/&gt;</stringProp>
+                  <stringProp name="BoundaryExtractor.default">none</stringProp>
+                  <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+                  <stringProp name="BoundaryExtractor.match_number">0</stringProp>
+                </BoundaryExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="663273714">&lt;input type=&quot;hidden&quot; name=&quot;userSession&quot; value=&quot;${userSession}&quot;/&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_02_Регистрация" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -17719,6 +18362,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="457557180">First time registering? Please complete the form below.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_03_Ввод_данных" enabled="true">
@@ -17773,28 +18426,28 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     <elementProp name="firstName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">firstName</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${Login}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="lastName" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">lastName</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${Password}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="address1" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">address1</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${address1}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="address2" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">address2</stringProp>
-                      <stringProp name="Argument.value">test1</stringProp>
+                      <stringProp name="Argument.value">${address2}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -17885,6 +18538,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1753361864">Welcome to Web Tours</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC06_04_Переход_в_кабинет" enabled="true">
@@ -17969,6 +18632,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1503672380"> User has returned to the home page.</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC06_04_/cgi-bin/nav.pl-6" enabled="true">
@@ -18304,6 +18977,16 @@ vars.put(&quot;cgifields_list&quot;, cgifields);
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1436882391">Connection: Keep-Alive</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
                 <hashTree/>
               </hashTree>
             </hashTree>
