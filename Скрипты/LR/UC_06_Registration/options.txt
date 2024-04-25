@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\22001\OneDrive\׀אבמקטי סעמכ\XSET\LR\UC_06_Registration
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_06_registration\\logfile.log
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_06_registration\\combined_UC_06_Registration.c
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_06_registration\\pre_cci.c

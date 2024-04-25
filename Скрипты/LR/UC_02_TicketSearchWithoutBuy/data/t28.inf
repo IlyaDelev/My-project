@@ -1,0 +1,11 @@
+[t28]
+FileName1=t28_ChRDaHJvbWUvMTI0LjAuNjM2Ny42MBIgCU35IjnBRbgwEgUN541ADhIFDc5BTHohSeE1wfpE8PA=.txt
+URL1=https://content-autofill.googleapis.com/v1/pages/ChRDaHJvbWUvMTI0LjAuNjM2Ny42MBIgCU35IjnBRbgwEgUN541ADhIFDc5BTHohSeE1wfpE8PA=?alt=proto
+Total=1
+ContentType=text/plain
+SnapshotXmlFile=snapshot_28.xml
+RequestHeaderFile=t28_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t28_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

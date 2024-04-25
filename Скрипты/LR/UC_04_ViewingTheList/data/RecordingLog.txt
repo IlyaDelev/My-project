@@ -1,0 +1,445 @@
+[API Trapper      (49e0:4a7c)] Recording in 64-bit mode: C:\Program Files\Google\Chrome\Application\chrome.exe
+[API Trapper      (1178:462c)] Recording in 64-bit mode: C:\Program Files\Google\Chrome\Application\chrome.exe
+[API Trapper      (3e94: cf0)] Recording in 64-bit mode: C:\Program Files\Google\Chrome\Application\chrome.exe
+[Network Analyzer (3e94:4a54)] ------------------------------------------------------------------------------------------
+[Network Analyzer (3e94:4a54)] Load Network Traffic Analyzers:
+[Network Analyzer (3e94:4a54)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (3e94:4a54)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (3e94:4a54)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (3e94:4a54)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (3e94:4a54)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (3e94:4a54)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (3e94:4a54)]     Analyzer Module: local_server (value=)
+[Network Analyzer (3e94:4a54)] ------------------------------------------------------------------------------------------
+[Network Analyzer (3e94:4550)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[API Trapper      (15fc:1b8c)] Recording in 64-bit mode: C:\Program Files\Google\Chrome\Application\chrome.exe
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Web Request      (3e94:4550)] "GET /WebTours/"   
+[Network Analyzer (3e94:4550)]   (Sid:  1) Client -> Server @ : 673 bytes (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.188:5228   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (3e94:4550)]   (Sid:  1) Server -> Client : 664 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 64.233.163.94:443   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (3e94:256c)]   (Sid:  2) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:3d14)]   (Sid:  3) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 64.233.162.95:443   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (3e94:2ae0)]   (Sid:  4) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4550)]   (Sid:  1) Connection Terminated (by Client)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.95:443   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.94:443   (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:13f8)]   (Sid:  5) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 64.233.161.113:443   (Service=)  (Sid=  7)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:20dc)]   (Sid:  6) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (3e94:393c)]   (Sid:  7) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  9)  PROXIED!
+[Web Request      (3e94:4550)] "GET /WebTours/header.html"   
+[Network Analyzer (3e94:4550)]   (Sid:  8) Client -> Server @ : 710 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer (3e94:4550)]   (Sid:  9) Client -> Server @ : 721 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid:  8) Server -> Client : 1008 bytes  (Service=HTTP)
+[Net An. Error    (3e94:3d14)] SSLAccept(ssl_id = 1295225647440 = 0000012D9176F150) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:2ae0)] SSLAccept(ssl_id = 1295226082720 = 0000012D917D95A0) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:256c)] SSLAccept(ssl_id = 1295225580288 = 0000012D9175EB00) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:20dc)] SSLAccept(ssl_id = 1295226393744 = 0000012D91825490) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Network Analyzer (3e94:393c)]   (Sid:  7) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Net An. Error    (3e94:3d14)]   (Sid:  3) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (3e94:2ae0)]   (Sid:  4) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (3e94:13f8)] SSLAccept(ssl_id = 1295226198080 = 0000012D917F5840) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Net An. Error    (3e94:256c)]   (Sid:  2) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (3e94:20dc)]   (Sid:  6) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (3e94:13f8)]   (Sid:  5) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid:  9) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid:  4) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid:  9) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.84:443   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (3e94: 9d4)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4550)]   (Sid:  2) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid:  6) Connection Terminated (by Client)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid:  5) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid:  8) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid:  9) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Web Request      (3e94:4550)] "GET /service/update2/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=chromecrx&prodchannel=&prodversion=124.0.6367.60&lang=ru&acceptformat=crx3,puff&x=id%3Donbkopaoemachfglhlpomhbpofepfpom%26v%3D0.0.0.0%26installedby%3Dinternal%26uc%26ping%3Dr%253D5%2526e%253D0%2526dr%253D1"   
+[Network Analyzer (3e94:4550)]   (Sid:  7) Client -> Server @ : 774 bytes (SSL)(Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid:  7) Server -> Client : 693 bytes (SSL) (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid:  7) Server -> Client : 302 bytes (SSL) (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid:  7) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 12)  PROXIED!
+[Web Request      (3e94:4550)] "GET /WebTours/images/webtours.png"   
+[Network Analyzer (3e94:4550)]   (Sid: 11) Client -> Server @ : 627 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/hp_logo.png"   
+[Network Analyzer (3e94:4550)]   (Sid: 12) Client -> Server @ : 626 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 11) Server -> Client : 4487 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 12) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (3e94: 9d4)]   (Sid: 10) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid: 11) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 12) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.188:443   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 14)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 15)  PROXIED!
+[Network Analyzer (3e94:2040)]   (Sid: 13) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Web Request      (3e94:4550)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (3e94:4550)]   (Sid: 14) Client -> Server @ : 762 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/home.html"   
+[Network Analyzer (3e94:4550)]   (Sid: 15) Client -> Server @ : 758 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 15) Server -> Client : 1660 bytes  (Service=HTTP)
+[Net An. Error    (3e94:2040)] SSLAccept(ssl_id = 1295225319280 = 0000012D9171EF70) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:2040)]   (Sid: 13) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 14) Server -> Client : 1752 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 14) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 14) Client -> Server @ : 658 bytes (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 16)  PROXIED!
+[Network Analyzer (3e94:4550)]   (Sid: 14) Server -> Client : 976 bytes  (Service=HTTP)
+[Network Analyzer (3e94:2ed8)]   (Sid: 16) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Web Request      (3e94:4550)] "GET /favicon.ico"   
+[Network Analyzer (3e94:4550)]   (Sid: 14) Client -> Server @ : 627 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 14) Server -> Client : 424 bytes  (Service=HTTP)
+[Net An. Error    (3e94:2ed8)] SSLAccept(ssl_id = 1295225769312 = 0000012D9178CD60) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:2ed8)]   (Sid: 16) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 17)  PROXIED!
+[Network Analyzer (3e94:4550)]   (Sid: 13) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 16) Connection Terminated (by Client)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 18)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.95:443   (Service=)  (Sid= 19)  PROXIED!
+[Network Analyzer (3e94:2680)]   (Sid: 18) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:2680)] SSLAccept(ssl_id = 1295225769312 = 0000012D9178CD60) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:2680)]   (Sid: 18) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:2bd4)]   (Sid: 19) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:2bd4)] SSLAccept(ssl_id = 1295225606016 = 0000012D91764F80) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:2bd4)]   (Sid: 19) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.94:443   (Service=)  (Sid= 20)  PROXIED!
+[Network Analyzer (3e94:35b8)]   (Sid: 20) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:35b8)] SSLAccept(ssl_id = 1295225460128 = 0000012D917415A0) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:35b8)]   (Sid: 20) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.94:80   (Service=)  (Sid= 21)  PROXIED!
+[Web Request      (3e94:4550)] "POST /service/update2/json?cup2key=14:Fd1silzimDdQ5MjqnL3zZDl98KKe3Xhshw2wnQPn2BI&cup2hreq=1f2586f95f53f589b9b72dbc932a0029cfefab9f43a754bf0f4af1a9d268976b"
+[Network Analyzer (3e94:4550)]   (Sid: 21) Client -> Server @ : 1258 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 21) Client -> Server @ : 8528 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 21) Server -> Client : 2013 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 22)  PROXIED!
+[Network Analyzer (3e94:348c)]   (Sid: 22) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:348c)] SSLAccept(ssl_id = 1295230418320 = 0000012D91BFBD90) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:348c)]   (Sid: 22) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 18) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 19) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 20) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 22) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 15) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 14) Connection Terminated (by Server)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.95:443   (Service=)  (Sid= 23)  PROXIED!
+[Network Analyzer (3e94:1da0)]   (Sid: 23) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:1da0)] SSLAccept(ssl_id = 1295225360496 = 0000012D91729070) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:1da0)]   (Sid: 23) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Web Request      (3e94:4550)] "POST /cgi-bin/login.pl"   
+[Network Analyzer (3e94:4550)]   (Sid: 17) Client -> Server @ : 1016 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 17) Server -> Client : 847 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 17) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /cgi-bin/nav.pl?page=menu&in=home"   
+[Network Analyzer (3e94:4550)]   (Sid: 17) Client -> Server @ : 887 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 17) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 17) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 23) Connection Terminated (by Client)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid: 17) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 24)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 108.177.14.95:443   (Service=)  (Sid= 25)  PROXIED!
+[Network Analyzer (3e94:1570)]   (Sid: 24) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94: 884)]   (Sid: 25) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:1570)] SSLAccept(ssl_id = 1295225360496 = 0000012D91729070) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94: 884)] SSLAccept(ssl_id = 1295225321344 = 0000012D9171F780) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:1570)]   (Sid: 24) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (3e94: 884)]   (Sid: 25) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 26)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 27)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 28)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 29)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 30)  PROXIED!
+[Web Request      (3e94:4550)] "GET /cgi-bin/login.pl?intro=true"   
+[Network Analyzer (3e94:4550)]   (Sid: 26) Client -> Server @ : 882 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 27) Client -> Server @ : 776 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 28) Client -> Server @ : 778 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 29) Client -> Server @ : 776 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 27) Server -> Client : 1024 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 28) Server -> Client : 1031 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 29) Server -> Client : 986 bytes  (Service=HTTP)
+[Network Analyzer (3e94:34f4)]   (Sid: 30) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Web Request      (3e94:4550)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 27) Client -> Server @ : 776 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 27) Server -> Client : 1048 bytes  (Service=HTTP)
+[Net An. Error    (3e94:34f4)] SSLAccept(ssl_id = 1295225975024 = 0000012D917BF0F0) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:34f4)]   (Sid: 30) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 26) Server -> Client : 1154 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 26) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 24) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 25) Connection Terminated (by Client)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 31)  PROXIED!
+[Network Analyzer (3e94:4550)]   (Sid: 30) Connection Terminated (by Client)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.188:5228   (Service=)  (Sid= 32)  PROXIED!
+[Network Analyzer (3e94: 924)]   (Sid: 32) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94: 924)] SSLAccept(ssl_id = 1295225360496 = 0000012D91729070) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94: 924)]   (Sid: 32) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 32) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 29) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 28) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 27) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 26) Connection Terminated (by Server)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 74.125.205.95:443   (Service=)  (Sid= 33)  PROXIED!
+[Network Analyzer (3e94:4a70)]   (Sid: 33) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:4a70)]   (Sid: 33) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Web Request      (3e94:4550)] "POST /oauth2/v4/token"   
+[Network Analyzer (3e94:4550)]   (Sid: 33) Client -> Server @ : 724 bytes (SSL)(Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 33) Server -> Client : 1107 bytes (SSL) (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 33) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[API Trapper      (4458: 6d8)] Recording in 64-bit mode: C:\Program Files\Google\Chrome\Application\chrome.exe
+[Web Request      (3e94:4550)] "GET /cgi-bin/welcome.pl?page=itinerary"   
+[Network Analyzer (3e94:4550)]   (Sid: 31) Client -> Server @ : 904 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 31) Server -> Client : 814 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 31) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /cgi-bin/nav.pl?page=menu&in=itinerary"   
+[Network Analyzer (3e94:4550)]   (Sid: 31) Client -> Server @ : 909 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 31) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 31) Server -> Client : 5 bytes  (Service=HTTP)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid: 31) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.73.95:443   (Service=)  (Sid= 34)  PROXIED!
+[Network Analyzer (3e94:3ccc)]   (Sid: 34) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 35)  PROXIED!
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:3ccc)] SSLAccept(ssl_id = 1295225777424 = 0000012D9178ED10) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Net An. Error    (3e94:3ccc)]   (Sid: 34) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 34) Connection Terminated (by Server)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 36)  PROXIED!
+[Web Request      (3e94:4550)] "GET /cgi-bin/itinerary.pl"   
+[Network Analyzer (3e94:4550)]   (Sid: 35) Client -> Server @ : 892 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/in_itinerary.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 36) Client -> Server @ : 786 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 36) Server -> Client : 1031 bytes  (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/home.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 36) Client -> Server @ : 778 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 36) Server -> Client : 985 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 4235 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 12792 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 8208 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 12376 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 12504 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 12312 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 12312 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 8240 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 8592 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 37)  PROXIED!
+[Web Request      (3e94:4550)] "GET /WebTours/images/cancelreservation.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 35) Client -> Server @ : 774 bytes (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /WebTours/images/cancelallreservations.gif"   
+[Network Analyzer (3e94:4550)]   (Sid: 36) Client -> Server @ : 778 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Server -> Client : 1128 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 36) Server -> Client : 1039 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 35) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 36) Connection Terminated (by Server)
+[Web Request      (3e94:4550)] "GET /cgi-bin/welcome.pl?signOff=1"   
+[Network Analyzer (3e94:4550)]   (Sid: 37) Client -> Server @ : 904 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 37) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 37) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (3e94:4550)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (3e94:4550)]   (Sid: 37) Client -> Server @ : 779 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 37) Server -> Client : 1750 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 37) Server -> Client : 5 bytes  (Service=HTTP)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4550)]   (Sid: 37) Connection Terminated (by Server)
+[Net An. Warning  (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (3e94:4a54)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.95:443   (Service=)  (Sid= 38)  PROXIED!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 39)  PROXIED!
+[Network Analyzer (3e94: 6a4)]   (Sid: 38) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94: 6a4)] SSLAccept(ssl_id = 1295225761232 = 0000012D9178ADD0) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94: 6a4)]   (Sid: 38) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Web Request      (3e94:4550)] "GET /WebTours/home.html"   
+[Network Analyzer (3e94:4550)]   (Sid: 39) Client -> Server @ : 875 bytes (Service=HTTP)
+[Network Analyzer (3e94:4550)]   (Sid: 39) Server -> Client : 194 bytes  (Service=HTTP)
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 64.233.161.113:443   (Service=)  (Sid= 40)  PROXIED!
+[Network Analyzer (3e94:2cb4)]   (Sid: 40) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:2cb4)]   (Sid: 40) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 64.233.161.113:443   (Service=)  (Sid= 41)  PROXIED!
+[Network Analyzer (3e94:1c24)]   (Sid: 41) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (3e94:1c24)]   (Sid: 41) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Network Analyzer (3e94:4550)]   (Sid: 10) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 38) Connection Terminated (by Client)
+[Network Analyzer (3e94:4550)]   (Sid: 39) Connection Terminated (by Server)
+[Network Analyzer (3e94:4550)]   (Sid: 40) Connection Terminated (by Server)
+[Network Analyzer (3e94:4a54)] Address lookup for LAPTOP-9TVN3RUH = 172.20.208.1
+[Network Analyzer (3e94:4a54)] Request Connection: Remote Server @ 173.194.221.188:443   (Service=)  (Sid= 42)  PROXIED!
+[Network Analyzer (3e94:349c)]   (Sid: 42) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (3e94:349c)] SSLAccept(ssl_id = 1295225777424 = 0000012D9178ED10) Failed, ctx = 0000012D91746350, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (3e94:349c)]   (Sid: 42) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (3e94:4550)]   (Sid: 42) Connection Terminated (by Client)

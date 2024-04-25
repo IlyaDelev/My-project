@@ -1,0 +1,5 @@
+[hosts]
+localhost=
+content-autofill.googleapis.com=
+update.googleapis.com=
+clients4.google.com=

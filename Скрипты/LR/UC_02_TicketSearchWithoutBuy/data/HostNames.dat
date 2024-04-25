@@ -1,0 +1,9 @@
+[hosts]
+localhost=
+update.googleapis.com=
+content-autofill.googleapis.com=
+clientservices.googleapis.com=
+safebrowsing.googleapis.com=
+www.googleapis.com=
+optimizationguide-pa.googleapis.com=
+accounts.google.com=

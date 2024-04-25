@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\22001\OneDrive\׀אבמקטי סעמכ\XSET\LR\UC_04_ViewingTheList
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_04_viewingthelist\\logfile.log
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_04_viewingthelist\\combined_UC_04_ViewingTheList.c
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_04_viewingthelist\\pre_cci.c

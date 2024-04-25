@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\22001\OneDrive\׀אבמקטי סעמכ\XSET\LR\UC_03_BuyTicket
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_03_buyticket\\logfile.log
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_03_buyticket\\combined_UC_03_BuyTicket.c
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_03_buyticket\\pre_cci.c

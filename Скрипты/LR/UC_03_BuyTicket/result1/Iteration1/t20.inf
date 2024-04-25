@@ -1,0 +1,13 @@
+[t20]
+SnapshotXmlFile=snapshot_17.xml
+ContentType=text/html
+StepName=Url: home.html_2
+Total=1
+FileName1=t20.html
+RequestHeaderFile=t20_RequestHeader.txt
+ResponseHeaderFile=t20_ResponseHeader.txt
+RawStepEndTime=1713645938442
+RawStepName=
+RequestBodyFile=t20_RequestBody.txt
+RawStepStartTime=1713645938468
+URL1=http://localhost:1080/cgi-bin/nav.pl?in=home

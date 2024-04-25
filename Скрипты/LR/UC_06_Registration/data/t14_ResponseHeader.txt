@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Wed, 17 Apr 2024 22:06:18 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Mon, 04 Mar 2024 19:01:46 GMT
+ETag: "c000000030996-2c18-612da5b7572f0"
+Accept-Ranges: bytes
+Content-Length: 11288
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+

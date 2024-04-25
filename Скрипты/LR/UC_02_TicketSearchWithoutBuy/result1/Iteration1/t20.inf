@@ -1,0 +1,13 @@
+[t20]
+SnapshotXmlFile=snapshot_16.xml
+ContentType=text/html
+StepName=Url: home.html_2
+Total=1
+FileName1=t20.html
+RequestHeaderFile=t20_RequestHeader.txt
+ResponseHeaderFile=t20_ResponseHeader.txt
+RawStepEndTime=1713645926696
+RawStepName=home.html_2
+RequestBodyFile=t20_RequestBody.txt
+RawStepStartTime=1713645926711
+URL1=http://localhost:1080/WebTours/home.html

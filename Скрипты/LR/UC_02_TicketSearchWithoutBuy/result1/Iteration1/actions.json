@@ -1,0 +1,94 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1713645925115
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t7.inf",
+                "time": 1713645925640
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: welcome.pl_2",
+                "infFile": "t10.inf",
+                "time": 1713645925987
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t16.inf",
+                "time": 1713645926380
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t17.inf",
+                "time": 1713645926541
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: welcome.pl_2",
+                "infFile": "t18.inf",
+                "time": 1713645926677
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC02_01_HomePage",
+                "rawStartTime": 1713645924930,
+                "rawEndTime": 1713645925464,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1678614616394043
+            },
+            {
+                "transactionName": "UC02_02_Login",
+                "rawStartTime": 1713645925494,
+                "rawEndTime": 1713645925696,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005566120147705078
+            },
+            {
+                "transactionName": "UC02_03_TicketSearch",
+                "rawStartTime": 1713645925849,
+                "rawEndTime": 1713645926089,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013542413711547852
+            },
+            {
+                "transactionName": "UC02_04_DateEntry",
+                "rawStartTime": 1713645926237,
+                "rawEndTime": 1713645926391,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006202220916748047
+            },
+            {
+                "transactionName": "UC02_05_Timing",
+                "rawStartTime": 1713645926422,
+                "rawEndTime": 1713645926543,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006534576416015625
+            },
+            {
+                "transactionName": "UC02_06_Logout",
+                "rawStartTime": 1713645926574,
+                "rawEndTime": 1713645926726,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005900144577026367
+            },
+            {
+                "transactionName": "UC_02_TicketSearchWithoutBuy",
+                "rawStartTime": 1713645924921,
+                "rawEndTime": 1713645926834,
+                "thinkTime": 0.0,
+                "wastedTime": 0.22959589958190919
+            }
+        ]
+    }
+]

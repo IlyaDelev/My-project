@@ -1,0 +1,12 @@
+Login,Password,address1,address2,pass1,arrive,depart
+jojo,bean,First Street,Liberty,Jojo Bean,Denver,Frankfurt
+Jack,Shepard,Second street,Chicago,Jack Shephard,Frankfurt,London
+Kate,Austen,Third street,Las Vegas,Kate Austen,London,Los Angeles
+James,Ford,Fourth street,Miami,James Ford,Los Angeles,Paris
+Charlie,Pace,Fifth street,New York,Charlie Pace,Paris,Portland
+John,Locke,Sixth street,Boston,John Locke,Portland,San Francisco
+Sayid,Jarrah,Seventh street,Dallas,Sayid Jarrah,San Francisco,Seattle
+Hugo,Reyes,Eighth street,Detroit,Hugo Reyes,Seattle,Sydney
+Jin,Kwon,Ninth street,Hollywood,Jin Kwon,Sydney,Zurich
+Sun,Kwon,Tenth street,Memphis,Sun Kwon,Zurich,Denver
+

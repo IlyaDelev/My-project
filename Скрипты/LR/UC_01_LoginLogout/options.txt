@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\22001\OneDrive\׀אבמקטי סעמכ\XSET\LR\UC_01_LoginLogout
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_01_loginlogout\\logfile.log
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_01_loginlogout\\combined_UC_01_LoginLogout.c
+c:\users\22001\onedrive\נאבמקטי סעמכ\xset\lr\uc_01_loginlogout\\pre_cci.c
