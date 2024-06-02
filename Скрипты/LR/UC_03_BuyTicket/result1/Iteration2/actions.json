@@ -1,0 +1,107 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1717283370811
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t7.inf",
+                "time": 1717283371316
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: welcome.pl_2",
+                "infFile": "t10.inf",
+                "time": 1717283371634
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t16.inf",
+                "time": 1717283372054
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t17.inf",
+                "time": 1717283372230
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Submit Data: reservations.pl_4",
+                "infFile": "t18.inf",
+                "time": 1717283372389
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: welcome.pl_2",
+                "infFile": "t19.inf",
+                "time": 1717283372545
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC03_01_HomePage",
+                "rawStartTime": 1717283370779,
+                "rawEndTime": 1717283371135,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03434634208679199
+            },
+            {
+                "transactionName": "UC03_02_Login",
+                "rawStartTime": 1717283371166,
+                "rawEndTime": 1717283371363,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008568525314331055
+            },
+            {
+                "transactionName": "UC03_03_TicketSearch",
+                "rawStartTime": 1717283371533,
+                "rawEndTime": 1717283371737,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01522517204284668
+            },
+            {
+                "transactionName": "UC03_04_DateEntry",
+                "rawStartTime": 1717283371887,
+                "rawEndTime": 1717283372056,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010253190994262696
+            },
+            {
+                "transactionName": "UC03_05_Timing",
+                "rawStartTime": 1717283372087,
+                "rawEndTime": 1717283372242,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009591102600097657
+            },
+            {
+                "transactionName": "UC03_06_BuyTicket",
+                "rawStartTime": 1717283372272,
+                "rawEndTime": 1717283372395,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009850740432739258
+            },
+            {
+                "transactionName": "UC03_07_Logout",
+                "rawStartTime": 1717283372442,
+                "rawEndTime": 1717283372598,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008720636367797852
+            },
+            {
+                "transactionName": "UC_03_BuyTicket",
+                "rawStartTime": 1717283370764,
+                "rawEndTime": 1717283372705,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12827610969543458
+            }
+        ]
+    }
+]

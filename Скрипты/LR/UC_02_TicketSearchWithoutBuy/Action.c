@@ -151,36 +151,6 @@ Action()
 		"Mode=HTTP",
 		LAST);
 
-/*Correlation comment - Do not change!  Original value='roundtrip' Name ='.cgifields' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=.cgifields",
-		"TagName=input",
-		"Extract=name",
-		"Type=checkbox",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		LAST);
-
-/*Correlation comment - Do not change!  Original value='seatPref' Name ='Name' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=Name",
-		"TagName=input",
-		"Extract=name",
-		"Type=radio",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		LAST);
-
-/*Correlation comment - Do not change!  Original value='seatType' Name ='Name_1' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=Name_1",
-		"TagName=input",
-		"Extract=name",
-		"Type=radio",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		LAST);
-
 	web_url("reservations.pl", 
 		"URL=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
 		"Resource=0", 
@@ -198,8 +168,20 @@ Action()
 
 	lr_start_transaction("UC02_04_DateEntry");
 
-	web_reg_find("Text=Find Flight",
+/*Correlation comment - Do not change!  Original value='000;0;05/27/2024' Name ='outboundFlight' Type ='ResponseBased'*/
+	web_reg_save_param_attrib(
+		"ParamName=outboundFlight",
+		"TagName=input",
+		"Extract=value",
+		"Name=outboundFlight",
+		"Type=radio",
+		SEARCH_FILTERS,
+		"IgnoreRedirections=No",
 		LAST);
+
+	web_reg_find("Fail=NotFound",
+				"Text=<B>{depart}</B> to <B>{arrive}</B> on <B>{departdate}</B>",
+				LAST);
 	
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",
@@ -215,13 +197,13 @@ Action()
 		"Name=arrive", "Value={arrive}", ENDITEM,
 		"Name=returnDate", "Value={returndate}", ENDITEM,
 		"Name=numPassengers", "Value=1", ENDITEM,
-		"Name={Name}", "Value={seatPref}", ENDITEM,
-		"Name={Name_1}", "Value={seatType}", ENDITEM,
+		"Name=seatPref", "Value={seatPref}", ENDITEM,
+		"Name=seatType", "Value={seatType}", ENDITEM,
 		"Name=findFlights.x", "Value=45", ENDITEM,
 		"Name=findFlights.y", "Value=11", ENDITEM,
-		"Name=.cgifields", "Value={.cgifields}", ENDITEM,
-		"Name=.cgifields", "Value={seatType}", ENDITEM,
-		"Name=.cgifields", "Value={seatPref}", ENDITEM,
+		"Name=.cgifields", "Value=roundtrip", ENDITEM,
+		"Name=.cgifields", "Value=seatType", ENDITEM,
+		"Name=.cgifields", "Value=seatPref", ENDITEM,
 		LAST);
 
 	lr_end_transaction("UC02_04_DateEntry", LR_AUTO);
@@ -246,8 +228,8 @@ Action()
 		"Name=outboundFlight", "Value={outboundFlight}", ENDITEM,
 		"Name=numPassengers", "Value=1", ENDITEM,
 		"Name=advanceDiscount", "Value=0", ENDITEM,
-		"Name={Name_1}", "Value={seatType}", ENDITEM,
-		"Name={Name}", "Value={seatPref}", ENDITEM,
+		"Name=seatType", "Value={seatType}", ENDITEM,
+		"Name=seatPref", "Value={seatPref}", ENDITEM,
 		"Name=reserveFlights.x", "Value=38", ENDITEM,
 		"Name=reserveFlights.y", "Value=12", ENDITEM,
 		LAST);

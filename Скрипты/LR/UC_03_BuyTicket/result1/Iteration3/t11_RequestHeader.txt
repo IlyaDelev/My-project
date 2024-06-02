@@ -1,0 +1,10 @@
+GET /cgi-bin/nav.pl?page=menu&in={in} HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/welcome.pl?page=search
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+Accept: */*
+Connection: Keep-Alive
+Host: localhost:1080
+Cookie: MSO=SID&1717283372; MTUserInfo=firstName&Kate&address2&Las%20Vegas&username&Kate&hash&101&lastName&Austen%0A&address1&Third%20street&creditCard&&expDate&%0A
+

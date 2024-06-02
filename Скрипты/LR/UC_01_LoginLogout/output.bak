@@ -1,4 +1,4 @@
-Virtual User Script started at: 20.04.2024 21:13:18
+Virtual User Script started at: 05.05.2024 16:11:22
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -33,10 +33,10 @@ Action.c(56): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
 Action.c(56): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
 Action.c(66): web_url("nav.pl") started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_url("nav.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(75): Notify: Transaction "UC01_01_HomePage" ended with a "Pass" status (Duration: 0,4012 Wasted Time: 0,1480).
+Action.c(75): Notify: Transaction "UC01_01_HomePage" ended with a "Pass" status (Duration: 0,4016 Wasted Time: 0,1456).
 Action.c(77): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(77): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
-Action.c(77): web_concurrent_end was successful, 2845 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(77): web_concurrent_end was successful, 2850 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(81): Notify: Transaction "UC01_02_Login" started.
 Action.c(83): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(83): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -49,7 +49,7 @@ Action.c(105): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
 Action.c(105): Registering web_url("nav.pl_2") was successful  	[MsgId: MMSG-26390]
 Action.c(114): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
 Action.c(114): Registering web_url("login.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(123): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,1695 Wasted Time: 0,0086).
+Action.c(123): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,1984 Wasted Time: 0,0093).
 Action.c(125): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(125): web_concurrent_end was successful, 2400 body bytes, 483 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(129): Notify: Transaction "UC01_03_Logout" started.
@@ -65,204 +65,12 @@ Action.c(145): Registering web_url("nav.pl_3") was successful  	[MsgId: MMSG-263
 Action.c(154): web_url("home.html_2") started  	[MsgId: MMSG-26355]
 Action.c(154): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(154): Registering web_url("home.html_2") was successful  	[MsgId: MMSG-26390]
-Action.c(162): Notify: Transaction "UC01_03_Logout" ended with a "Pass" status (Duration: 0,1492 Wasted Time: 0,0052).
+Action.c(162): Notify: Transaction "UC01_03_Logout" ended with a "Pass" status (Duration: 0,1574 Wasted Time: 0,0076).
 Action.c(164): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(164): web_concurrent_end was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(168): Notify: Transaction "UC_01_LoginLogout" ended with a "Pass" status (Duration: 1,1050 Wasted Time: 0,1887).
+Action.c(168): Notify: Transaction "UC_01_LoginLogout" ended with a "Pass" status (Duration: 1,1292 Wasted Time: 0,1918).
 Ending action Action.
 Ending iteration 1.
-Starting iteration 2.
-Starting action Action.
-Action.c(4): Notify: Transaction "UC_01_LoginLogout" started.
-Action.c(6): Notify: Transaction "UC01_01_HomePage" started.
-Action.c(8): web_url("WebTours") started  	[MsgId: MMSG-26355]
-Action.c(8): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
-Action.c(17): web_set_sockets_option started  	[MsgId: MMSG-26355]
-Action.c(17): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(19): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(19): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(21): web_url("header.html") started  	[MsgId: MMSG-26355]
-Action.c(21): Registering web_url("header.html") was successful  	[MsgId: MMSG-26390]
-Action.c(30): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
-Action.c(30): Registering web_url("welcome.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(39): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(39): web_concurrent_end was successful, 1396 body bytes, 625 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(41): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(41): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(43): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(43): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(46): web_url("home.html") started  	[MsgId: MMSG-26355]
-Action.c(46): Registering web_url("home.html") was successful  	[MsgId: MMSG-26390]
-Action.c(56): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
-Action.c(56): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
-Action.c(66): web_url("nav.pl") started  	[MsgId: MMSG-26355]
-Action.c(66): Registering web_url("nav.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(75): Notify: Transaction "UC01_01_HomePage" ended with a "Pass" status (Duration: 0,2798 Wasted Time: 0,0254).
-Action.c(77): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(77): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
-Action.c(77): web_concurrent_end was successful, 2851 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(81): Notify: Transaction "UC01_02_Login" started.
-Action.c(83): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(83): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(87): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-Action.c(87): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-Action.c(87): web_submit_data("login.pl") was successful, 481 body bytes, 386 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(103): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(103): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(105): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(105): Registering web_url("nav.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(114): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(114): Registering web_url("login.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(123): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,1952 Wasted Time: 0,0085).
-Action.c(125): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(125): web_concurrent_end was successful, 2400 body bytes, 483 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(129): Notify: Transaction "UC01_03_Logout" started.
-Action.c(131): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(131): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(134): web_url("welcome.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(134): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
-Action.c(134): web_url("welcome.pl_2") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(143): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(143): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(145): Registering web_url("nav.pl_3") was successful  	[MsgId: MMSG-26390]
-Action.c(154): web_url("home.html_2") started  	[MsgId: MMSG-26355]
-Action.c(154): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-Action.c(154): Registering web_url("home.html_2") was successful  	[MsgId: MMSG-26390]
-Action.c(162): Notify: Transaction "UC01_03_Logout" ended with a "Pass" status (Duration: 0,1925 Wasted Time: 0,0374).
-Action.c(164): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(164): web_concurrent_end was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(168): Notify: Transaction "UC_01_LoginLogout" ended with a "Pass" status (Duration: 1,0619 Wasted Time: 0,1017).
-Ending action Action.
-Ending iteration 2.
-Starting iteration 3.
-Starting action Action.
-Action.c(4): Notify: Transaction "UC_01_LoginLogout" started.
-Action.c(6): Notify: Transaction "UC01_01_HomePage" started.
-Action.c(8): web_url("WebTours") started  	[MsgId: MMSG-26355]
-Action.c(8): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
-Action.c(17): web_set_sockets_option started  	[MsgId: MMSG-26355]
-Action.c(17): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(19): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(19): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(21): web_url("header.html") started  	[MsgId: MMSG-26355]
-Action.c(21): Registering web_url("header.html") was successful  	[MsgId: MMSG-26390]
-Action.c(30): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
-Action.c(30): Registering web_url("welcome.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(39): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(39): web_concurrent_end was successful, 1396 body bytes, 625 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(41): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(41): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(43): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(43): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(46): web_url("home.html") started  	[MsgId: MMSG-26355]
-Action.c(46): Registering web_url("home.html") was successful  	[MsgId: MMSG-26390]
-Action.c(56): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
-Action.c(56): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
-Action.c(66): web_url("nav.pl") started  	[MsgId: MMSG-26355]
-Action.c(66): Registering web_url("nav.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(75): Notify: Transaction "UC01_01_HomePage" ended with a "Pass" status (Duration: 0,3062 Wasted Time: 0,0585).
-Action.c(77): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(77): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
-Action.c(77): web_concurrent_end was successful, 2847 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(81): Notify: Transaction "UC01_02_Login" started.
-Action.c(83): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(83): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(87): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-Action.c(87): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-Action.c(87): web_submit_data("login.pl") was successful, 481 body bytes, 386 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(103): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(103): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(105): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(105): Registering web_url("nav.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(114): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(114): Registering web_url("login.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(123): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,1882 Wasted Time: 0,0082).
-Action.c(125): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(125): web_concurrent_end was successful, 2400 body bytes, 483 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(129): Notify: Transaction "UC01_03_Logout" started.
-Action.c(131): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(131): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(134): web_url("welcome.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(134): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
-Action.c(134): web_url("welcome.pl_2") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(143): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(143): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(145): Registering web_url("nav.pl_3") was successful  	[MsgId: MMSG-26390]
-Action.c(154): web_url("home.html_2") started  	[MsgId: MMSG-26355]
-Action.c(154): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-Action.c(154): Registering web_url("home.html_2") was successful  	[MsgId: MMSG-26390]
-Action.c(162): Notify: Transaction "UC01_03_Logout" ended with a "Pass" status (Duration: 0,1841 Wasted Time: 0,0393).
-Action.c(164): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(164): web_concurrent_end was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(168): Notify: Transaction "UC_01_LoginLogout" ended with a "Pass" status (Duration: 1,0447 Wasted Time: 0,1434).
-Ending action Action.
-Ending iteration 3.
-Starting iteration 4.
-Starting action Action.
-Action.c(4): Notify: Transaction "UC_01_LoginLogout" started.
-Action.c(6): Notify: Transaction "UC01_01_HomePage" started.
-Action.c(8): web_url("WebTours") started  	[MsgId: MMSG-26355]
-Action.c(8): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
-Action.c(17): web_set_sockets_option started  	[MsgId: MMSG-26355]
-Action.c(17): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(19): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(19): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(21): web_url("header.html") started  	[MsgId: MMSG-26355]
-Action.c(21): Registering web_url("header.html") was successful  	[MsgId: MMSG-26390]
-Action.c(30): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
-Action.c(30): Registering web_url("welcome.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(39): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(39): web_concurrent_end was successful, 1396 body bytes, 625 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(41): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(41): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(43): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(43): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(46): web_url("home.html") started  	[MsgId: MMSG-26355]
-Action.c(46): Registering web_url("home.html") was successful  	[MsgId: MMSG-26390]
-Action.c(56): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
-Action.c(56): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
-Action.c(66): web_url("nav.pl") started  	[MsgId: MMSG-26355]
-Action.c(66): Registering web_url("nav.pl") was successful  	[MsgId: MMSG-26390]
-Action.c(75): Notify: Transaction "UC01_01_HomePage" ended with a "Pass" status (Duration: 0,3054 Wasted Time: 0,0293).
-Action.c(77): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(77): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
-Action.c(77): web_concurrent_end was successful, 2847 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(81): Notify: Transaction "UC01_02_Login" started.
-Action.c(83): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(83): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(87): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-Action.c(87): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-Action.c(87): web_submit_data("login.pl") was successful, 481 body bytes, 380 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(103): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(103): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(105): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(105): Registering web_url("nav.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(114): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(114): Registering web_url("login.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(123): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,1686 Wasted Time: 0,0148).
-Action.c(125): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(125): web_concurrent_end was successful, 2401 body bytes, 483 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(129): Notify: Transaction "UC01_03_Logout" started.
-Action.c(131): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(131): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(134): web_url("welcome.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(134): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
-Action.c(134): web_url("welcome.pl_2") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(143): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(143): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(145): Registering web_url("nav.pl_3") was successful  	[MsgId: MMSG-26390]
-Action.c(154): web_url("home.html_2") started  	[MsgId: MMSG-26355]
-Action.c(154): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-Action.c(154): Registering web_url("home.html_2") was successful  	[MsgId: MMSG-26390]
-Action.c(162): Notify: Transaction "UC01_03_Logout" ended with a "Pass" status (Duration: 0,1987 Wasted Time: 0,0440).
-Action.c(164): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(164): web_concurrent_end was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(168): Notify: Transaction "UC_01_LoginLogout" ended with a "Pass" status (Duration: 1,0525 Wasted Time: 0,1293).
-Ending action Action.
-Ending iteration 4.
 Ending Vuser...
 Starting action vuser_end.
 Ending action vuser_end.

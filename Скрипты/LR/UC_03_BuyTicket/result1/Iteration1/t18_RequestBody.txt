@@ -1,4 +1,4 @@
 "firstName=jojo&lastName=bean&address1=First+Street&address2=Liberty&pass1=Jojo+Bean&creditCard"
-"=1111222233334444&expDate=12%2F22&oldCCOption=&numPassengers=1&seatPref=First&seatPref=None&ou"
-"tboundFlight=%7BoutboundFlight%7D&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights."
-"x=49&buyFlights.y=7&.cgifields=saveCC"
+"=1111222233334444&expDate=12%2F22&oldCCOption=&numPassengers=1&seatType=First&seatPref=None&ou"
+"tboundFlight=100%3B723%3B06%2F02%2F2024&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFl"
+"ights.x=49&buyFlights.y=7&.cgifields=saveCC"

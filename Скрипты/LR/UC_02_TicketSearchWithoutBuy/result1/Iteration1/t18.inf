@@ -1,13 +1,13 @@
 [t18]
-SnapshotXmlFile=snapshot_14.xml
+SnapshotXmlFile=snapshot_16.xml
 ContentType=text/html
-StepName=Url: welcome.pl_2
+StepName=Url: home.html_2
 Total=1
 FileName1=t18.html
 RequestHeaderFile=t18_RequestHeader.txt
 ResponseHeaderFile=t18_ResponseHeader.txt
-RawStepEndTime=0
-RawStepName=welcome.pl_2
+RawStepEndTime=1717282590697
+RawStepName=home.html_2
 RequestBodyFile=t18_RequestBody.txt
-RawStepStartTime=1713645926604
-URL1=http://localhost:1080/cgi-bin/welcome.pl?signOff=1
+RawStepStartTime=1717282590713
+URL1=http://localhost:1080/WebTours/home.html

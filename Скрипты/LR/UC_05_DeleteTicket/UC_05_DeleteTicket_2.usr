@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=UC_05_DeleteTicket_2.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci

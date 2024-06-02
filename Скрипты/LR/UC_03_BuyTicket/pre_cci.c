@@ -2802,9 +2802,18 @@ Action()
 	lr_think_time(5);
 
 	lr_start_transaction("UC03_04_DateEntry");
-
-	web_reg_find("Text=Find Flight",
+	
+		web_reg_save_param_ex(
+		"ParamName=outboundFlight",
+		"LB=name=\"outboundFlight\" value=\"",
+		"RB=\" checked",
+		"SEARCH_FILTERS",
+		"Scope=BODY",
 		"LAST");
+
+	web_reg_find("Fail=NotFound",
+				"Text=<B>{depart}</B> to <B>{arrive}</B> on <B>{departDate}</B>",
+				"LAST");
 	
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",
@@ -2816,17 +2825,17 @@ Action()
 		"ITEMDATA",
 		"Name=advanceDiscount", "Value=0", "ENDITEM",
 		"Name=depart", "Value={depart}", "ENDITEM",
-		"Name=departDate", "Value={departdate}", "ENDITEM",
+		"Name=departDate", "Value={departDate}", "ENDITEM",
 		"Name=arrive", "Value={arrive}", "ENDITEM",
-		"Name=returnDate", "Value={returndate}", "ENDITEM",
+		"Name=returnDate", "Value={{returnDate}}", "ENDITEM",
 		"Name=numPassengers", "Value=1", "ENDITEM",
-		"Name={Name}", "Value={seatPref}", "ENDITEM",
-		"Name={Name_1}", "Value={seatType}", "ENDITEM",
+		"Name=seatPref", "Value={seatPref}", "ENDITEM",
+		"Name=seatType", "Value={seatType}", "ENDITEM",
 		"Name=findFlights.x", "Value=45", "ENDITEM",
 		"Name=findFlights.y", "Value=11", "ENDITEM",
-		"Name=.cgifields", "Value={.cgifields}", "ENDITEM",
-		"Name=.cgifields", "Value={seatType}", "ENDITEM",
-		"Name=.cgifields", "Value={seatPref}", "ENDITEM",
+		"Name=.cgifields", "Value=roundtrip", "ENDITEM",
+		"Name=.cgifields", "Value=seatType", "ENDITEM",
+		"Name=.cgifields", "Value=seatPref", "ENDITEM",
 		"LAST");
 
 	lr_end_transaction("UC03_04_DateEntry", 2);
@@ -2849,8 +2858,8 @@ Action()
 		"Name=outboundFlight", "Value={outboundFlight}", "ENDITEM",
 		"Name=numPassengers", "Value=1", "ENDITEM",
 		"Name=advanceDiscount", "Value=0", "ENDITEM",
-		"Name={Name_1}", "Value={seatType}", "ENDITEM",
-		"Name={Name}", "Value={seatPref}", "ENDITEM",
+		"Name=seatType", "Value={seatType}", "ENDITEM",
+		"Name=seatPref", "Value={seatPref}", "ENDITEM",
 		"Name=reserveFlights.x", "Value=38", "ENDITEM",
 		"Name=reserveFlights.y", "Value=12", "ENDITEM",
 		"LAST");
@@ -2881,8 +2890,8 @@ Action()
 		"Name=expDate", "Value={expdate}", "ENDITEM",
 		"Name=oldCCOption", "Value=", "ENDITEM",
 		"Name=numPassengers", "Value=1", "ENDITEM",
-		"Name={Name_1}", "Value={seatType}", "ENDITEM",
-		"Name={Name}", "Value={seatPref}", "ENDITEM",
+		"Name=seatType", "Value={seatType}", "ENDITEM",
+		"Name=seatPref", "Value={seatPref}", "ENDITEM",
 		"Name=outboundFlight", "Value={outboundFlight}", "ENDITEM",
 		"Name=advanceDiscount", "Value=0", "ENDITEM",
 		"Name=returnFlight", "Value=", "ENDITEM",
